@@ -259,36 +259,43 @@
     </div>
 
     <footer>
-
         <div class="icon-select">
-            <ion-icon class="icon blue" name="home"></ion-icon>
+            <ion-icon class="icon blue" name="home-outline"></ion-icon>
             <div class="padding-highlight active"></div>
         </div>
         <div class="icon-select">
             <ion-icon class="icon red" name="heart-outline"></ion-icon>
-
             <div class="padding-highlight"></div>
         </div>
         <div class="icon-select">
             <ion-icon class="icon green" name="add-circle-outline"></ion-icon>
-
             <div class="padding-highlight"></div>
         </div>
         <div class="icon-select">
             <ion-icon class="icon violet" name="chatbox-outline"></ion-icon>
-
             <div class="padding-highlight"></div>
         </div>
         <div class="icon-select">
             <ion-icon class="icon yellow" name="notifications-outline"></ion-icon>
             <div class="padding-highlight"></div>
         </div>
-
-        
     </footer>
+
+    <script>
+        const icons = document.querySelectorAll('.icon-select');
+
+        icons.forEach(icon => {
+            icon.addEventListener('click', () => {
+                icons.forEach(icon => {
+                    icon.querySelector('.padding-highlight').classList.remove('active');
+                });
+                icon.querySelector('.padding-highlight').classList.add('active');
+            });
+        });
+    </script>
+
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
 </body>
 
 </html>

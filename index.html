@@ -17,21 +17,17 @@
         }
 
         body {
-            color: #e0e0e0;
             color: black;
             font-weight: 600;
             background-color: rgb(29, 34, 41);
             }
 
         header, footer {
-            height: 6vh;
             background-color: rgb(54, 61, 74);
             position: fixed;
             display: flex;
             width: 100%;
             z-index: 1000;
-            align-items: center;
-            justify-content: space-between;
         }
 
         header {
@@ -44,21 +40,18 @@
             left: 0;
         }
 
-        a {
-            color: black;
-        }
-
         .top_side {
             display: flex;
             justify-content: center;
             align-items: center;
+            align-items: flex-start;
+
             height: 100%;
             width: 40%;
         }
 
         select {
             width: 100%;
-            height: 100%;
             font-weight: 600;
             border: none;
             outline: none;
@@ -92,7 +85,6 @@
         .card-text {
             position: absolute;
             bottom: 0px;
-            /* background-color: rgb(229, 229, 229, 0.6); */
             text-align: center;
             width: 100%;
             z-index: 1;
@@ -111,19 +103,18 @@
         }
 
         .icon {
-            font-size: 2.5rem;
+            font-size: 6vh;
             color: white;
             object-fit: cover;
         }
 
         .icon-select {
             width: 100%;
-            height: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: flex-end;
             cursor: pointer;
-
         }
 
         .padding-highlight {
@@ -132,12 +123,8 @@
             background-color: black;
         }
 
-        .active {
+        a, .active {
             background-color: rgb(112, 186, 250);
-        }
-
-        .active {
-            color: rgb(252, 127, 127);
         }
 
         .red {

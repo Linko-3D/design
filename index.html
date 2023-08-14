@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            font-family: "Poppins", sans-serif;
+            text-decoration: none;
+        }
+
+        body {
+            color: #e0e0e0;
+            color: black;
+            font-weight: 600;
+            background-color: rgb(29, 34, 41);
+            }
+
+        header {
+            height: 6vh;
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(229, 229, 229);
+            background-color: rgb(54, 61, 74);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            
+        }
+
+        a {
+            color: black;
+        }
+
+        .top_side {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 30%;
+        }
+
+        select {
+            width: 100%;
+            font-weight: 600;
+            border: none;
+            outline: none;
+        }
+
+        option {
+            font-weight: 600;
+         }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 6vh 0vw;
+        }
+
+        .card {
+            width: 50%;
+            height: 66.67vw;
+            display: flex;
+            position: relative;
+            flex-direction: column;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card-text {
+            position: absolute;
+            bottom: 0px;
+            /* background-color: rgb(229, 229, 229, 0.6); */
+            text-align: center;
+            width: 100%;
+            z-index: 1;
+  color: white;
+  text-shadow: -1px -1px 2px rgb(0, 0, 0, 1),  
+               1px -1px 2px rgb(0, 0, 0, 1),
+              -1px 1px 2px rgb(0, 0, 0, 1),
+               1px 1px 2px rgb(0, 0, 0, 1);
+
+               
+        }
+
+        .favorite-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1;
+        }
+
+        .icon {
+            font-size: 2rem;
+            cursor: pointer;
+            color: white;
+        }
+
+        .active {
+            color: rgb(252, 127, 127);
+        }
+
+        .red {
+            color: rgb(252, 127, 127);
+        }
+        
+        .green {
+            color: rgb(142, 239, 151);
+        }
+        
+        .blue {
+            color: rgb(141, 165, 243);
+        }
+
+
+        footer {
+            height: 6vh;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgb(229, 229, 229);
+            background-color: rgb(54, 61, 74);
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            z-index: 1000;
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="site-header">
+        <div class="top_side">
+            <ion-icon class="icon" name="menu-outline"></ion-icon>
+        </div>
+        <select id="choix">
+            <option value="option1">Tous les départements</option>
+            <option value="option2">75 - Paris</option>
+            <option value="option3">Option 3</option>
+            <option value="option4">Option 4</option>
+        </select>
+        <div class="top_side">
+            <ion-icon class="icon" name="person-outline"></ion-icon>
+        </div>
+    </header>
+    <div class="container">
+        <a class="card" href="#">
+            <img src="back.png" alt="">
+            <div class="favorite-button"><ion-icon class="icon" name="heart-outline"></ion-icon></div>
+            <div class="card-text">
+                <div>Title</div>
+                <div>City</div>
+                </div>
+            </a>
+                    <a class="card" href="#">
+                        <img src="back.png" alt="">
+                        <div class="favorite-button"><ion-icon class="icon" name="heart-outline"></ion-icon></div>
+                        <div class="card-text">
+                            <div>Title</div>
+                            <div>City</div>
+                        </div>
+                    </a>
+                            <a class="card" href="#">
+                                <img src="back.png" alt="">
+                                <div class="favorite-button"><ion-icon class="icon red" name="heart"></ion-icon></div>
+                                <div class="card-text">
+                                    <div>Title</div>
+                                    <div>City</div>
+                                </div>
+                            </a>
+                                    <a class="card" href="#">
+                                        <img src="back.png" alt="">
+                                        <div class="favorite-button"><ion-icon class="icon" name="heart-outline"></ion-icon></div>
+                                        <div class="card-text">
+                                            <div>Title</div>
+                                            <div>City</div>
+                                        </div>
+                                    </a>
+                                            <a class="card" href="#">
+                                                <img src="back.png" alt="">
+                                                <div class="favorite-button"><ion-icon class="icon" name="heart-outline"></ion-icon></div>
+                                                <div class="card-text">
+                                                    <div>Title</div>
+                                                    <div>City</div>
+                                                </div>
+                                            </a>
+                                                    <a class="card" href="#">
+                                                        <img src="back.png" alt="">
+                                                        <div class="favorite-button"><ion-icon class="icon" name="heart-outline"></ion-icon></div>
+                                                        <div class="card-text">
+                                                            <div>Title</div>
+                                                            <div>City</div>
+                                                        </div>
+                                                    </a>
+                                                            <a class="card" href="#">
+                                                                <img src="back.png" alt="">
+                                                                <div class="favorite-button"><ion-icon class="icon" name="heart-outline"></ion-icon></div>
+                                                                <div class="card-text">
+                                                                    <div>Title</div>
+                                                                    <div>City</div>
+                                                                </div>
+                                                            </a>
+                                                                    <a class="card" href="#">
+                                                                        <img src="back.png" alt="">
+                                                                        <div class="favorite-button"><ion-icon class="icon" name="heart-outline"></ion-icon></div>
+                                                                        <div class="card-text">
+                                                                            <div>Title</div>
+                                                                            <div>City</div>
+                                                                        </div>
+                                                                    </a>
+                                                                            <a class="card" href="#">
+                                                                                <img src="back.png" alt="">
+                                                                                <div class="favorite-button"><ion-icon class="icon" name="heart-outline"></ion-icon></div>
+                                                                                <div class="card-text">
+                                                                                    <div>Title</div>
+                                                                                    <div>City</div>
+                                                                                </div>
+                                                                            </a>
+              
+             
+                
+
+    </div>
+
+    <!-- Sticky Footer -->
+    <footer>
+        <ion-icon class="icon blue" name="home-outline"></ion-icon>
+        <ion-icon class="icon green" name="add-circle-outline"></ion-icon>
+        <ion-icon class="icon red" name="heart-outline"></ion-icon>
+        <!-- <ion-icon  class="icon" name="search-outline"></ion-icon> -->
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- <script>
+        const icons = document.querySelectorAll('.icon');
+
+        icons.forEach(icon => {
+            icon.addEventListener('click', () => {
+                icons.forEach(otherIcon => {
+                    if (otherIcon !== icon) {
+                        otherIcon.classList.remove('active');
+                    }
+                });
+                icon.classList.toggle('active');
+            });
+        });
+    </script> -->
+
+
+</body>
+
+</html>

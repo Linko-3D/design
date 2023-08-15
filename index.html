@@ -87,10 +87,13 @@
             text-align: center;
             width: 100%;
             z-index: 1;
-  text-shadow: -1px -1px 2px rgb(0, 0, 0, 1),  
-               1px -1px 2px rgb(0, 0, 0, 1),
-              -1px 1px 2px rgb(0, 0, 0, 1),
-               1px 1px 2px rgb(0, 0, 0, 1);
+
+
+            text-shadow:
+                -1px -1px 0px black,   /* Top-left shadow */
+                1px -1px 0 black,   /* Top-right shadow */
+                -1px  1px 0 black,   /* Bottom-left shadow */
+                1px  1px 0 black;   /* Bottom-right shadow */
         }
 
         .favorite-button {
@@ -121,8 +124,9 @@
         }
 
         a, .active {
-            background-color: rgb(112, 186, 250);
+            /* background-color: rgb(112, 186, 250); */
         }
+
 
         .red {
             color: rgb(252, 127, 127);
@@ -237,10 +241,10 @@
     </div>
 
     <footer>
-        <div class="icon-select">
+        <a class="icon-select" href="index.html">
             <ion-icon class="icon blue" name="home-outline"></ion-icon>
             <div class="padding-highlight active"></div>
-        </div>
+        </a>
         <div class="icon-select">
             <ion-icon class="icon red" name="heart-outline"></ion-icon>
             <div class="padding-highlight"></div>

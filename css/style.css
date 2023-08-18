@@ -118,8 +118,10 @@ text-shadow: -1px -1px 2px black,
     background-color: black;
 }
 
-.active {
-    background-color: rgb(112, 186, 250);
+
+
+a {
+    color: rgb(112, 186, 250);
 }
 
 .red {
@@ -147,3 +149,28 @@ text-shadow: -1px -1px 2px black,
     flex-wrap: wrap;
     padding: 6vh 0vw;
 }
+
+#menu {
+    position: fixed;
+    width: 100vw;
+    top: 6vh;
+    height: 88vh;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: -100%;
+    transition: 0.25s;
+}
+
+.active #menu {
+    left: 0;
+}
+
+
+
+
+/* <ion-icon class="icon" name="menu-outline"></ion-icon> */

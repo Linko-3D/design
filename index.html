@@ -9,9 +9,18 @@
 </head>
 
 <body>
+
     <header id="site-header">
         <div class="top_side">
-            <ion-icon class="icon" name="menu-outline"></ion-icon>
+            <div id="burger">
+                <ion-icon class="icon" name="menu-outline"></ion-icon>
+            
+                <div id="menu">
+                    <a href="">Connexion</a>
+                    <a href="">Inscription</a>
+                </div>
+            </div>
+            
         </div>
 
         <select name="departments">
@@ -29,6 +38,10 @@
         </div>
     </header>
     <div class="container">
+
+
+
+
         <a class="card" href="ad.html">
             <img src="placeholder.png" alt="">
             <div class="favorite-button"><ion-icon class="icon" name="heart-outline"></ion-icon></div>
@@ -125,6 +138,8 @@
             });
         });
     </script>
+
+    <script src="app.js"></script>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

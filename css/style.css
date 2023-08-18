@@ -148,7 +148,7 @@ a {
 .container {
     display: flex;
     flex-wrap: wrap;
-    padding: 6vh 0vw;
+    padding: 6vh 0vw; 
 }
 
 #menu {
@@ -157,18 +157,20 @@ a {
     top: 6vh;
     height: 88vh;
     z-index: 2;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0);
     backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     left: -100%;
-    transition: 0.25s;
+    gap: 2vh;
+    transition: 0.15s;
 }
 
 .active #menu {
     left: 0;
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 

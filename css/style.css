@@ -63,14 +63,13 @@ option {
  }
 
 
-
 .card {
     width: 50%;
-    height: 66.67vw;
     display: flex;
     position: relative;
     flex-direction: column;
     color: white;
+    padding: 1px;
 }
 
 img {

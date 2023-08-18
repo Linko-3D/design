@@ -12,6 +12,7 @@
 body {
     color: white;
     font-weight: 600;
+    font-size: calc(0.5rem + 1.5vw);
     background-color: rgb(29, 34, 41);
     background-color: rgb(37, 43, 52);
     }

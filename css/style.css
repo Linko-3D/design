@@ -164,7 +164,8 @@ a {
     align-items: center;
     justify-content: center;
     left: -100%;
-    gap: 2vh;
+    font-size: calc(1rem + 1.5vw);
+    gap: 4vh;
     transition: 0.15s;
 }
 

@@ -14,6 +14,7 @@
     --font-color: white;
     --padding: 5.5vh;
     --padding-selector: 0.5vh;
+    --menu-color: rgb(54, 61, 74);
 }
 
 body {
@@ -26,7 +27,7 @@ body {
     }
 
 header, footer {
-    background-color: rgb(54, 61, 74);
+    background-color: var(--menu-color);
     position: fixed;
     display: flex;
     width: 100%;
@@ -176,7 +177,6 @@ a {
     top: 0;
     height: 100vh;
     z-index: 2;
-    background-color: rgba(0, 0, 0, 0);
     backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
@@ -185,12 +185,12 @@ a {
     transform: translateX(-100%);
     font-size: calc(1rem + 1.5vw);
     gap: 2vh;
-    transition: 0.15s;
+    transition: 0.25s;
+    background-color: var(--menu-color);
 }
 
 #menu-burger.active {
     transform: translateX(0);
-    background-color: rgba(0, 0, 0, 0.75);
 }
 
 
@@ -204,4 +204,8 @@ a {
 
 
 
-/* <ion-icon class="icon" name="menu-outline"></ion-icon> */
+.rect {
+    height: 150vh;
+    width: 100%;
+    background-color: red;
+}

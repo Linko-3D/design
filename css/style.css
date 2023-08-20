@@ -12,7 +12,7 @@
 :root {
     --background-color: rgb(37, 43, 52);
     --font-color: white;
-    --padding: 5vh;
+    --padding: 5.5vh;
 }
 
 body {
@@ -121,9 +121,13 @@ text-shadow: -1px -1px 2px black,
 }
 
 .padding-highlight {
-    height: 0.5vh;
+    height: 1vh;
     width: 100%;
     background-color: black;
+}
+
+.active {
+    background-color: rgb(141, 165, 243);
 }
 
 a {
@@ -150,6 +154,10 @@ a {
     color: rgb(255, 222, 102);
 }
 
+.bg-blue {
+    background-color: rgb(141, 165, 243);
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -164,7 +172,7 @@ a {
     position: fixed;
     width: 100vw;
     top: var(--padding);
-    height: calc( 100vh - var(--padding) * 2);
+    height: calc( 99vh - var(--padding) * 2);
     z-index: 2;
     background-color: rgba(0, 0, 0, 0);
     backdrop-filter: blur(10px);

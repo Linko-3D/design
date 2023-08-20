@@ -12,6 +12,7 @@
 :root {
     --background-color: rgb(37, 43, 52);
     --font-color: white;
+    --padding: 5vh;
 }
 
 body {
@@ -34,7 +35,7 @@ header, footer {
 header {
     top: 0;
     left: 0;
-    height: 6vh;
+    height: var(--padding);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -106,7 +107,7 @@ text-shadow: -1px -1px 2px black,
 }
 
 .icon {
-    font-size: 6vh;
+    font-size: var(--padding);
     object-fit: cover;
 }
 
@@ -152,7 +153,7 @@ a {
 .container {
     display: flex;
     flex-wrap: wrap;
-    padding: 6vh 0vw; 
+    padding: var(--padding) 0vw; 
 }
 
 .card-details {
@@ -162,8 +163,8 @@ a {
 #menu-burger {
     position: fixed;
     width: 100vw;
-    top: 6vh;
-    height: 88vh;
+    top: var(--padding);
+    height: calc( 100vh - var(--padding) * 2);
     z-index: 2;
     background-color: rgba(0, 0, 0, 0);
     backdrop-filter: blur(10px);

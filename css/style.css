@@ -159,7 +159,7 @@ a {
     position: fixed;
 }
 
-#menu {
+#menu-burger {
     position: fixed;
     width: 100vw;
     top: 6vh;
@@ -171,15 +171,24 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    left: -100%;
+    transform: translateX(-100%);
     font-size: calc(1rem + 1.5vw);
     gap: 4vh;
     transition: 0.15s;
 }
 
-.active #menu {
-    left: 0;
+#menu-burger.active {
+    transform: translateX(0);
     background-color: rgba(0, 0, 0, 0.75);
+}
+
+
+
+#menu-login {
+    position: fixed;
+    width: 100vw;
+    height: 88vh;
+    background-color: red;
 }
 
 

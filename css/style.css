@@ -13,6 +13,7 @@
     --background-color: rgb(37, 43, 52);
     --font-color: white;
     --padding: 5.5vh;
+    --padding-selector: 0.5vh;
 }
 
 body {
@@ -120,8 +121,8 @@ text-shadow: -1px -1px 2px black,
     cursor: pointer;
 }
 
-.padding-highlight {
-    height: 1vh;
+.padding-selector {
+    height: var(--padding-selector);
     width: 100%;
     background-color: black;
 }
@@ -162,7 +163,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     padding-top:  var(--padding);
-    padding-bottom: calc( var(--padding) + 1vh)  ;
+    padding-bottom: calc( var(--padding) + var(--padding-selector))  ;
 }
 
 .card-details {

@@ -173,8 +173,8 @@ a {
 #menu-burger {
     position: fixed;
     width: 100vw;
-    top: var(--padding);
-    height: calc( 99vh - var(--padding) * 2);
+    top: 0;
+    height: 100vh;
     z-index: 2;
     background-color: rgba(0, 0, 0, 0);
     backdrop-filter: blur(10px);
@@ -184,7 +184,7 @@ a {
     justify-content: center;
     transform: translateX(-100%);
     font-size: calc(1rem + 1.5vw);
-    gap: 4vh;
+    gap: 2vh;
     transition: 0.15s;
 }
 

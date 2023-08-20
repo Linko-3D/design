@@ -9,6 +9,7 @@
 </head>
 
 <body>
+
     <header id="site-header">
         <div class="top_side">
             <div id="burger">
@@ -19,34 +20,44 @@
                     <a href="">Contact</a>
                 </div>
             </div>
+            
         </div>
 
-        <div id="search-container">
-            <select name="departments">
-                <option value="All">Tous les départements</option>
-                <option value="75">75 - Paris</option>
-                <option value="01">01 - Ain</option>
-                <option value="02">02 - Aisne</option>
-            </select>
-
-            <input type="search" id="search" name="search" placeholder="Rechercher" style="display: none;">
-        </div>
-
+        <select name="departments">
+            <option value="All">Tous les départements</option>
+            <option value="75">75 - Paris</option>
+            <option value="01">01 - Ain</option>
+            <option value="02">02 - Aisne</option>
+        </select>
+        
+        
         <div class="top_side">
-            <ion-icon class="icon" id="search-icon" name="search-outline"></ion-icon>
+            <!-- <ion-icon class="icon" name="funnel-outline"></ion-icon> -->
+            <ion-icon class="icon" name="search-outline"></ion-icon>
             <ion-icon class="icon" name="person-outline"></ion-icon>
         </div>
-    </header>
 
+
+    </header>
     <div class="container">
+
+
+
+
         <a class="card" href="ad.html">
             <img src="placeholder.png" alt="">
             <div class="favorite-button"><ion-icon class="icon" name="heart-outline"></ion-icon></div>
             <div class="card-text">
                 <div>Title</div>
                 <div>City</div>
-            </div>
-        </a>
+                </div>
+                
+            </a>
+
+
+            
+
+
     </div>
 
     <footer>
@@ -73,22 +84,19 @@
     </footer>
 
     <script>
-        const searchContainer = document.getElementById("search-container");
-        const selectMenu = searchContainer.querySelector("select");
-        const inputSearch = searchContainer.querySelector("#search");
-        const searchIcon = document.getElementById("search-icon");
+        const icons = document.querySelectorAll('.icon-select');
 
-        searchIcon.addEventListener("click", () => {
-            if (selectMenu.style.display !== "none") {
-                selectMenu.style.display = "none";
-                inputSearch.style.display = "inline-block";
-                inputSearch.focus();
-            } else {
-                selectMenu.style.display = "inline-block";
-                inputSearch.style.display = "none";
-            }
+        icons.forEach(icon => {
+            icon.addEventListener('click', () => {
+                icons.forEach(icon => {
+                    icon.querySelector('.padding-highlight').classList.remove('active');
+                });
+                icon.querySelector('.padding-highlight').classList.add('active');
+            });
         });
     </script>
+
+    <script src="app.js"></script>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

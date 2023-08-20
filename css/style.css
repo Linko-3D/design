@@ -58,16 +58,12 @@ footer {
     cursor: pointer;
 }
 
-select, input {
+select {
     width: 100%;
     height: 100%;
     font-weight: 600;
     border: none;
     outline: none;
-}
-
-input {
-    padding-left: 2vw;
 }
 
 option {
@@ -186,10 +182,6 @@ a {
     background-color: rgba(0, 0, 0, 0.75);
 }
 
-#search-container {
-    height: 100%;
-    width: 100%;
-}
 
 
 /* <ion-icon class="icon" name="menu-outline"></ion-icon> */

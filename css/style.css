@@ -142,6 +142,7 @@ img {
 
 .padding-selector {
     height: var(--low-padding);
+    margin-top: var(--low-padding);
     width: 100%;
     background-color: black;
 }

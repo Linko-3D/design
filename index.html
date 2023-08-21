@@ -15,6 +15,10 @@
         <a href="">Contact</a>
     </div>
 
+    <div id="menu-search">
+        <input type="search" id="search" name="search">
+    </div>
+
     <!-- <div id ="menu-login">
         
         <input type="search" id="search" name="search">
@@ -23,27 +27,34 @@
 
 
     <header>
-        <div class="top_side">
-            <div id="burger">
-                <ion-icon class="icon" name="menu-outline"></ion-icon>
-            </div>
-            
+        <div class="top-side">
+
+         <ion-icon id="burger" class="icon" name="menu-outline"></ion-icon>
+
         </div>
 
         <select name="departments">
-            <option value="All">Tous les départements</option>
+            <option value="All">Partout</option>
             <option value="75">75 - Paris</option>
             <option value="01">01 - Ain</option>
             <option value="02">02 - Aisne</option>
         </select>
+
+        <div class="v-separator"></div>
+
+        <select name="departments">
+            <option value="All">Tout type</option>
+            <option value="All">Voiture</option>
+        </select>
+
+        <!-- <select name="departments">
+            <option value="All">Plus récent</option>
+            <option value="All">Moins cher</option>
+        </select> -->
         
         
         <div class="top_side">
-            <!-- <ion-icon class="icon" name="funnel-outline"></ion-icon> -->
-            <ion-icon class="icon" name="search-outline"></ion-icon>
-            <div id="login">
                 <ion-icon class="icon" name="person-outline"></ion-icon>
-            </div>
         </div>
 
     </header>

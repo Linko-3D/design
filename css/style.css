@@ -13,13 +13,26 @@
     --background-color: rgb(37, 43, 52);
     --font-color: white;
     --padding: 5.5vh;
-    --padding-selector: 0.5vh;
+    --low-padding: 0.5vh;
     --menu-color: rgb(54, 61, 74);
+    --font-weight: 600;
+}
+
+.padding, header, input, select {
+    height: var(--padding);
+}
+
+.h-separator {
+    height: var(--low-padding)
+}
+
+.v-separator {
+    width: var(--low-padding);
 }
 
 body {
     color: var(--font-color);
-    font-weight: 600;
+    font-weight: var(--font-weight);
     font-size: calc(0.5rem + 1.5vw);
     /* background-color: rgb(29, 34, 41); */
     /* background-color: rgb(37, 43, 52); */
@@ -37,7 +50,6 @@ header, footer {
 header {
     top: 0;
     left: 0;
-    height: var(--padding);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,29 +60,30 @@ footer {
     left: 0;
 }
 
-.top_side {
+.top-side {
     display: flex;
     justify-content: center;
     align-items: center;
-    align-items: flex-start;
     height: 100%;
 }
 
-.top_side .icon {
+.top-side .icon {
     padding: 0px 2vw;
     cursor: pointer;
 }
 
 select, input {
     width: 100%;
-    height: 100%;
-    font-weight: 600;
+    font-weight: var(--font-weight);
     border: none;
     outline: none;
 }
+input[type="search"] {
+    padding: var(--low-padding); 
+  }
 
 option {
-    font-weight: 600;
+    font-weight: var(--font-weight);
  }
 
 
@@ -124,7 +137,7 @@ img {
 }
 
 .padding-selector {
-    height: var(--padding-selector);
+    height: var(--low-padding);
     width: 100%;
     background-color: black;
 }
@@ -164,8 +177,8 @@ a {
 .container {
     display: flex;
     flex-wrap: wrap;
-    padding-top:  var(--padding);
-    padding-bottom: calc( var(--padding) + var(--padding-selector))  ;
+    padding-top:  calc(var(--padding) * 2 + var(--low-padding) * 2);
+    padding-bottom: calc( var(--padding) + var(--low-padding))  ;
 }
 
 .card-details {
@@ -177,7 +190,7 @@ a {
     width: 100vw;
     top: 0;
     height: 100vh;
-    z-index: 2;
+    z-index: 3;
     backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
@@ -195,15 +208,21 @@ a {
 }
 
 
+#menu-search {
+    position: fixed;
+    width: 100vw;
+    margin-top: var(--padding);
+    padding: var(--low-padding);
+    z-index: 2;
+    background-color: var(--background-color);
+}
 
 #menu-login {
     position: fixed;
     width: 100vw;
-    height: 100vh;
     background-color: red;
     z-index: 6;
 }
-
 
 
 .rect {

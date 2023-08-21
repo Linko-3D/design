@@ -22,6 +22,10 @@
     height: var(--padding);
 }
 
+.top-button {
+    width: 20vw;
+}
+
 .h-separator {
     height: var(--low-padding)
 }
@@ -65,15 +69,17 @@ footer {
     justify-content: center;
     align-items: center;
     height: 100%;
+    width: 50vw;
 }
 
 .top-side .icon {
-    padding: 0px 2vw;
+    /* padding: 0px 2vw; */
+    /* width: 20vw; */
     cursor: pointer;
 }
 
 select, input {
-    width: 100%;
+    width: 30vw;
     font-weight: var(--font-weight);
     border: none;
     outline: none;
@@ -111,8 +117,6 @@ img {
        -1px 1px 2px black,
        1px 1px 2px black; 
        z-index: 1;
-
-
 }
 
 .favorite-button {
@@ -177,7 +181,7 @@ a {
 .container {
     display: flex;
     flex-wrap: wrap;
-    padding-top:  calc(var(--padding) * 2 + var(--low-padding) * 2);
+    padding-top:  calc(var(--padding));
     padding-bottom: calc( var(--padding) + var(--low-padding))  ;
 }
 
@@ -206,7 +210,6 @@ a {
 #menu-burger.active {
     transform: translateX(0);
 }
-
 
 #menu-search {
     position: fixed;

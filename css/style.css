@@ -71,14 +71,20 @@ footer {
 .line {
     display: flex;
     width: 100%;
+    position: relative;
+    margin-top: -1px;
 }
 
-select, input {
+select,
+input {
     width: 100%;
     font-weight: var(--font-weight);
     border: none;
     outline: none;
+    position: relative;
+    z-index: 1;
 }
+
 input[type="search"] {
     padding: var(--low-padding); 
   }

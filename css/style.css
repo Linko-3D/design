@@ -24,6 +24,8 @@
 
 .top-button {
     width: 20vw;
+    display: flex;
+    justify-content: center;
 }
 
 .h-separator {
@@ -49,6 +51,7 @@ header, footer {
     display: flex;
     width: 100%;
     z-index: 5;
+    border: 1px solid black;
 }
 
 header {
@@ -64,22 +67,14 @@ footer {
     left: 0;
 }
 
-.top-side {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 50vw;
-}
 
-.top-side .icon {
-    /* padding: 0px 2vw; */
-    /* width: 20vw; */
-    cursor: pointer;
+.line {
+    display: flex;
+    width: 100%;
 }
 
 select, input {
-    width: 30vw;
+    width: 100%;
     font-weight: var(--font-weight);
     border: none;
     outline: none;

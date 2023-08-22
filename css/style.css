@@ -71,7 +71,6 @@ footer {
 .line {
     display: flex;
     width: 100%;
-    position: relative;
     margin-top: -1px;
 }
 
@@ -81,8 +80,6 @@ input {
     font-weight: var(--font-weight);
     border: none;
     outline: none;
-    position: relative;
-    z-index: 1;
 }
 
 input[type="search"] {

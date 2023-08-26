@@ -16,6 +16,7 @@
     --low-padding: 0.5vh;
     --menu-color: rgb(54, 61, 74);
     --font-weight: 600;
+    --font-size: calc(0.75rem + 1vw);
 }
 
 .padding,
@@ -23,6 +24,7 @@ header,
 input,
 select {
     height: var(--padding);
+    font-size: var(--font-size);
 }
 
 .top-button {
@@ -36,14 +38,18 @@ select {
 }
 
 .v-separator {
-    width: var(--low-padding);
+    width: 1px;
 }
 
 body {
     color: var(--font-color);
     font-weight: var(--font-weight);
-    font-size: calc(0.5rem + 1.5vw);
+    font-size: var(--font-size);
     background-color: var(--background-color);
+    text-shadow: -1px -1px 2px black,
+    1px -1px 2px black,
+    -1px 1px 2px black,
+    1px 1px 2px black;
 }
 
 header,
@@ -80,18 +86,17 @@ input {
     font-weight: var(--font-weight);
     border: none;
     outline: none;
-}
-
-input[type="search"] {
     padding: var(--low-padding);
 }
 
 option {
     font-weight: var(--font-weight);
+    font-size: var(--font-size);
 }
 
 .card {
-    width: 50%;
+    width: 50vw;
+    height: 66.67vw;
     display: flex;
     position: relative;
     flex-direction: column;
@@ -101,17 +106,14 @@ option {
 
 img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
 .card-text {
     position: absolute;
-    bottom: 5px;
-    left: 5px;
-    text-shadow: -1px -1px 2px black,
-    1px -1px 2px black,
-    -1px 1px 2px black,
-    1px 1px 2px black;
+    bottom: 10px;
+    left: 10px;
     z-index: 1;
 }
 
@@ -125,7 +127,6 @@ img {
 
 .icon {
     font-size: var(--padding);
-    object-fit: cover;
 }
 
 .icon-select {
@@ -176,6 +177,10 @@ a {
     background-color: rgb(141, 165, 243);
 }
 
+.bg-green {
+    background-color: rgb(142, 239, 151);
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -193,15 +198,15 @@ a {
     top: 0;
     height: 100vh;
     z-index: 3;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transform: translateX(-100%);
-    font-size: calc(1rem + 1.5vw);
+    font-size: calc( var(--font-size) * 1.5);
     gap: 2vh;
-    transition: 0.25s;
+    transition: 0.2s;
     background-color: rgba(54, 61, 74, 0.75);
 }
 
@@ -210,23 +215,11 @@ a {
 }
 
 #menu-search {
+    
     position: fixed;
     width: 100vw;
     margin-top: var(--padding);
     padding: var(--low-padding);
     z-index: 2;
     background-color: var(--background-color);
-}
-
-#menu-login {
-    position: fixed;
-    width: 100vw;
-    background-color: red;
-    z-index: 6;
-}
-
-.rect {
-    height: 150vh;
-    width: 100%;
-    background-color: red;
 }

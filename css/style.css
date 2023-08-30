@@ -7,150 +7,66 @@
     list-style: none;
     font-family: "Poppins", sans-serif;
     text-decoration: none;
+    border: none;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 :root {
-    --background-color: rgb(37, 43, 52);
-    --font-color: white;
     --padding: 5.5vh;
-    --low-padding: 0.5vh;
-    --menu-color: rgb(54, 61, 74);
-    --font-weight: 600;
-    --font-size: calc(0.75rem + 1vw);
-}
-
-.padding,
-header,
-input,
-select {
-    height: var(--padding);
-    font-size: var(--font-size);
-}
-
-.top-button {
-    width: 20vw;
-    display: flex;
-    justify-content: center;
-}
-
-.h-separator {
-    height: var(--low-padding);
-}
-
-.v-separator {
-    width: 1px;
 }
 
 body {
-    color: var(--font-color);
-    font-weight: var(--font-weight);
-    font-size: var(--font-size);
-    background-color: var(--background-color);
+    background-color: rgb(37, 43, 52);
+    color: white;
+    font-size: calc(0.75rem + 1vw);
     text-shadow: -1px -1px 2px black,
     1px -1px 2px black,
     -1px 1px 2px black,
     1px 1px 2px black;
 }
 
-header,
-footer {
-    background-color: var(--menu-color);
+header, footer {
+    z-index: 10;
     position: fixed;
     display: flex;
     width: 100%;
-    z-index: 5;
-    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(54, 61, 74);
+    height: var(--padding);
 }
 
 header {
     top: 0;
-    left: 0;
-    justify-content: space-between;
-    align-items: center;
 }
 
 footer {
-    bottom: 0;
-    left: 0;
+    bottom: 0
 }
 
-.line {
-    display: flex;
-    width: 100%;
-    margin-top: -1px;
+.rect {
+    background-color: red;
+    height: 200vh;
+    width: 50px;
 }
 
-select,
-input {
-    width: 100%;
-    font-weight: var(--font-weight);
-    border: none;
-    outline: none;
-    padding: var(--low-padding);
-}
-
-option {
-    font-weight: var(--font-weight);
-    font-size: var(--font-size);
-}
-
-.card {
-    width: 50vw;
-    height: 66.67vw;
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    color: var(--font-color);
-    padding: 1px;
-}
-
-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.card-text {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    z-index: 1;
-}
-
-.favorite-button {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    z-index: 1;
-    width: var(--padding);
+.top-side {
+    background-color: green;
 }
 
 .icon {
-    font-size: var(--padding);
+    width: 20vw;
+    height: 100%;
 }
 
-.icon-select {
+.option, select {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    cursor: pointer;
+    height: 100%;
 }
 
-.padding-selector {
-    height: var(--low-padding);
-    margin-top: var(--low-padding);
-    width: 100%;
-    background-color: black;
-}
-
-.active {
-    background-color: rgb(141, 165, 243);
-}
-
-a {
-    color: rgb(112, 186, 250);
+select {
+    outline: none;
 }
 
 .red {
@@ -173,53 +89,28 @@ a {
     color: rgb(255, 222, 102);
 }
 
-.bg-blue {
-    background-color: rgb(141, 165, 243);
-}
-
-.bg-green {
-    background-color: rgb(142, 239, 151);
-}
-
 .container {
+    margin: var(--padding) 0;
     display: flex;
     flex-wrap: wrap;
-    padding-top: var(--padding);
-    padding-bottom: calc(var(--padding) + var(--low-padding));
 }
 
-.card-details {
-    position: fixed;
+.card {
+    position: relative;
+    width: 50vw;
+    height: 66.67vw;
+    background-color: blue;
 }
 
-#menu-burger {
-    position: fixed;
-    width: 100vw;
-    top: 0;
-    height: 100vh;
-    z-index: 3;
-    backdrop-filter: blur(20px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transform: translateX(-100%);
-    font-size: calc( var(--font-size) * 1.5);
-    gap: 2vh;
-    transition: 0.2s;
-    background-color: rgba(54, 61, 74, 0.75);
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-#menu-burger.active {
-    transform: translateX(0);
-}
-
-#menu-search {
-    
-    position: fixed;
-    width: 100vw;
-    margin-top: var(--padding);
-    padding: var(--low-padding);
-    z-index: 2;
-    background-color: var(--background-color);
+.card-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 1;
 }

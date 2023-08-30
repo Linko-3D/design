@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+
+:root {
+    --background-color: rgb(37, 43, 52);
+    --font-color: white;
+    --padding: 5.5vh;
+    --low-padding: 0.5vh;
+    --menu-color: rgb(54, 61, 74);
+    --font-weight: 600;
+    --font-size: calc(0.75rem + 1vw);
+}
+
+.padding,
+header,
+input,
+select {
+    height: var(--padding);
+    font-size: var(--font-size);
+}
+
+.top-button {
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+}
+
+.h-separator {
+    height: var(--low-padding);
+}
+
+.v-separator {
+    width: 1px;
+}
+
+body {
+    color: var(--font-color);
+    font-weight: var(--font-weight);
+    font-size: var(--font-size);
+    background-color: var(--background-color);
+    text-shadow: -1px -1px 2px black,
+    1px -1px 2px black,
+    -1px 1px 2px black,
+    1px 1px 2px black;
+}
+
+header,
+footer {
+    background-color: var(--menu-color);
+    position: fixed;
+    display: flex;
+    width: 100%;
+    z-index: 5;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+header {
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+}
+
+.line {
+    display: flex;
+    width: 100%;
+    margin-top: -1px;
+}
+
+select,
+input {
+    width: 100%;
+    font-weight: var(--font-weight);
+    border: none;
+    outline: none;
+    padding: var(--low-padding);
+}
+
+option {
+    font-weight: var(--font-weight);
+    font-size: var(--font-size);
+}
+
+.card {
+    width: 50vw;
+    height: 66.67vw;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    color: var(--font-color);
+    padding: 1px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 1;
+}
+
+.favorite-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 1;
+    width: var(--padding);
+}
+
+.icon {
+    font-size: var(--padding);
+}
+
+.icon-select {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.padding-selector {
+    height: var(--low-padding);
+    margin-top: var(--low-padding);
+    width: 100%;
+    background-color: black;
+}
+
+.active {
+    background-color: rgb(141, 165, 243);
+}
+
+a {
+    color: rgb(112, 186, 250);
+}
+
+.red {
+    color: rgb(252, 127, 127);
+}
+
+.green {
+    color: rgb(142, 239, 151);
+}
+
+.blue {
+    color: rgb(141, 165, 243);
+}
+
+.violet {
+    color: rgb(195, 142, 241);
+}
+
+.yellow {
+    color: rgb(255, 222, 102);
+}
+
+.bg-blue {
+    background-color: rgb(141, 165, 243);
+}
+
+.bg-green {
+    background-color: rgb(142, 239, 151);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: var(--padding);
+    padding-bottom: calc(var(--padding) + var(--low-padding));
+}
+
+.card-details {
+    position: fixed;
+}
+
+#menu-burger {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    height: 100vh;
+    z-index: 3;
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-100%);
+    font-size: calc( var(--font-size) * 1.5);
+    gap: 2vh;
+    transition: 0.2s;
+    background-color: rgba(54, 61, 74, 0.75);
+}
+
+#menu-burger.active {
+    transform: translateX(0);
+}
+
+#menu-search {
+    
+    position: fixed;
+    width: 100vw;
+    margin-top: var(--padding);
+    padding: var(--low-padding);
+    z-index: 2;
+    background-color: var(--background-color);
+}

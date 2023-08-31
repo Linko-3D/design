@@ -60,6 +60,10 @@ footer {
     height: 100%;
 }
 
+.small {
+    width: 15vw;
+}
+
 .option, select {
     width: 100%;
     height: 100%;
@@ -103,17 +107,6 @@ a {
     color: rgb(112, 186, 250);
 }
 
-
-
-
-
-
-
-
-
-
-
-
 .red {
     color: rgb(252, 127, 127);
 }
@@ -132,4 +125,12 @@ a {
 
 .yellow {
     color: rgb(255, 222, 102);
+}
+
+.active-background {
+    background-color: rgb(55, 79, 102);
+}
+
+.bold {
+    font-weight: 900;
 }

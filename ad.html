@@ -1,152 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
-
 <body>
-    <div id="menu-burger">
-        <a href="">Connexion</a>
-        <a href="">Inscription</a>
-        <a href="">Contact</a>
-    </div>
-
-
+    
     <header>
-        <div id="burger" class="top-button">
-        <ion-icon class="icon" name="menu-outline"></ion-icon>
+        <div>
+            <ion-icon class="icon" name="menu-outline"></ion-icon>
         </div>
-        <div class="line">
+
         <select name="department">
             <option value="All">Partout</option>
             <option value="75">75 - Paris</option>
             <option value="01">01 - Ain</option>
             <option value="02">02 - Aisne</option>
         </select>
+            
 
-        <div class="v-separator"></div>
+        <div class="option">
+            <select name="category">
+                <option value="All">Toute catégorie</option>
+                <option value="car">Voiture</option>
+                <option value="house">Immobilier</option>
+            </select>
+        </div>
 
-        <select name="category">
-            <option value="All">Toute catégorie</option>
-            <option value="car">Voiture</option>
-            <option value="house">Immobilier</option>
-        </select>
-    </div>
-
-    <a class="top-button" href="">
-        <ion-icon class="icon red" name="person-outline"></ion-icon>
-    </a>
+        <div>
+            <ion-icon class="icon" name="search"></ion-icon>
+        </div>
     </header>
-
-
-
-    <!-- <div id="menu-search">
-        <input type="search" id="search" name="search">
-    </div> -->
-
-    <!-- <div id ="menu-login">
-        
-        <input type="search" id="search" name="search">
-
-    </div> -->
-
-
-    <!-- <header>
-
-         <ion-icon id="burger" class="icon" name="menu-outline"></ion-icon>
-
-
-        <select name="departments">
-            <option value="All">Partout</option>
-            <option value="75">75 - Paris</option>
-            <option value="01">01 - Ain</option>
-            <option value="02">02 - Aisne</option>
-        </select>
-
-        <div class="v-separator"></div>
-
-        <select name="departments">
-            <option value="All">Tout type</option>
-            <option value="All">Voiture</option>
-        </select>
-
-        select name="departments">
-            <option value="All">Plus récent</option>
-            <option value="All">Moins cher</option>
-        </select>
-        
-        
-            <ion-icon class="icon" name="person-outline"></ion-icon>
-
-    </header> -->
-    
-    
-    
     
     <div class="container">
 
-
-        <img src="placeholder.png" alt="">
-
-        <div>Description: </div>
+AAA
         
-
-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi purus nisi, vulputate id malesuada sed, varius et dolor. Aliquam erat volutpat. Praesent non bibendum lacus. Curabitur pharetra tortor non magna porta luctus. Vivamus at maximus quam, sit amet laoreet lacus. Morbi rutrum felis nec dui imperdiet varius. Pellentesque euismod dui vel ligula imperdiet, sit amet imperdiet magna aliquet.
-
-Vivamus aliquet eleifend massa at hendrerit. Fusce tempus quam a tellus pellentesque cursus. Vivamus et mauris eu lorem gravida pellentesque. Nulla non odio massa. Quisque vehicula aliquet tincidunt. Cras sodales massa ut mollis dignissim. Donec eget risus laoreet, tincidunt nisi pulvinar, consectetur dui. Vestibulum consequat felis ex, ut ultricies ante consectetur id. Phasellus orci quam, mattis at semper quis, tempor et purus. Donec blandit luctus diam a ultricies. Sed semper scelerisque dolor, eget semper dolor cursus at. Ut quam tortor, maximus et velit quis, porta dignissim neque.
-
-            
-            
-                                                   
-
     </div>
 
 
     <footer>
-        <a href="index.html" class="icon-select">
-            <ion-icon class="icon blue" name="home"></ion-icon>
-            <div class="padding-selector active"></div>
+        <a href="index.html">
+        <ion-icon class="icon blue bg" name="home"></ion-icon>
         </a>
-        <a class="icon-select">
-            <ion-icon class="icon red" name="heart-outline"></ion-icon>
-            <div class="padding-selector"></div>
-        </a>
-        <a class="icon-select">
-            <ion-icon class="icon green" name="add-circle-outline"></ion-icon>
-            <div class="padding-selector"></div>
-        </a>
-        <a class="icon-select">
-            <ion-icon class="icon violet" name="mail-outline"></ion-icon>
-            <div class="padding-selector"></div>
-        </a>
-        <a class="icon-select">
-            <ion-icon class="icon yellow" name="notifications-outline"></ion-icon>
-            <div class="padding-selector"></div>
-        </a>
-    </footer>
-
-    <script>
-        const icons = document.querySelectorAll('.icon-select');
-
-        icons.forEach(icon => {
-            icon.addEventListener('click', () => {
-                icons.forEach(icon => {
-                    icon.querySelector('.padding-selector').classList.remove('active');
-                });
-                icon.querySelector('.padding-selector').classList.add('active');
-            });
-        });
-    </script>
-
-    <script src="app.js"></script>
+        <ion-icon class="icon red" name="heart"></ion-icon>
+        <ion-icon class="icon green" name="add-circle"></ion-icon>
+        <ion-icon class="icon violet" name="mail"></ion-icon>
+        <ion-icon class="icon yellow" name="notifications"></ion-icon>
+</footer>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
-
 </html>

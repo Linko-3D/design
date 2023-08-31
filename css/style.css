@@ -15,7 +15,7 @@ html {
 }
 
 :root {
-    --padding: 5.5vh;
+    --padding: 5vh;
 }
 
 body {
@@ -128,7 +128,7 @@ a {
 }
 
 .active-background {
-    background-color: rgb(55, 79, 102);
+    background-color: rgb(58, 82, 106);
 }
 
 .bold {

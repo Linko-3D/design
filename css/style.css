@@ -16,6 +16,7 @@ html {
 
 :root {
     --padding: 5vh;
+    --selector: 0.5vh;
 }
 
 body {
@@ -34,19 +35,19 @@ header, footer {
     display: flex;
     width: 100%;
     background-color: rgb(54, 61, 74);
-    height: var(--padding);
 }
 
 header {
     top: 0;
+    height: var(--padding);
 }
 
 footer {
-    bottom: 0
+    bottom: 0;
+    height: calc(var(--padding) + var(--selector));
 }
 
 .rect {
-    background-color: red;
     height: 200vh;
     width: 50px;
 }
@@ -146,6 +147,10 @@ a {
     color: rgb(255, 222, 102);
 }
 
+.bg-blue {
+    background-color: rgb(141, 165, 243);
+}
+
 .active-background {
     background-color: rgb(58, 82, 106);
 }
@@ -183,4 +188,14 @@ a {
 #top-anchor {
     position: absolute;
     top: 0;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.selector {
+    height: var(--selector);
+    width: 100%;
 }

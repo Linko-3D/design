@@ -36,7 +36,8 @@ header, footer {
     position: fixed;
     display: flex;
     width: 100%;
-    background-color: rgb(54, 61, 74);
+    background-color: rgba(54, 61, 74, 0.9);
+    backdrop-filter: blur(5px);
 }
 
 header {
@@ -161,7 +162,7 @@ a {
 }
 
 .active-background {
-    background-color: rgb(58, 82, 106);
+    background-color: rgba(58, 82, 106, 0.5);
 }
 
 .bold {

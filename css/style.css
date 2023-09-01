@@ -123,6 +123,12 @@ img {
     color: white;
 }
 
+.selector {
+    height: var(--selector);
+    width: 100%;
+    background-color: black;
+}
+
 a {
     color: rgb(112, 186, 250);
 }
@@ -175,14 +181,10 @@ a {
 .arrow-top {
     position: fixed;
     z-index: 5;
-    bottom: 5vw;
-    right: 5vw;
-    font-size: 4rem;
-    color: rgb(107, 110, 115);
-}
-
-.arrow-top:hover {
-    color: rgb(194, 195, 197);
+    bottom: 6vw;
+    right: 4vw;
+    font-size: 3.5rem;
+    color: rgba(255, 255, 255, 0.75);
 }
 
 #top-anchor {
@@ -193,9 +195,4 @@ a {
 .column {
     display: flex;
     flex-direction: column;
-}
-
-.selector {
-    height: var(--selector);
-    width: 100%;
 }

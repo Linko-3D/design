@@ -165,3 +165,16 @@ a {
     margin: 2.5vw;
     padding: 2.5vw;
 }
+
+.arrow-top {
+    position: fixed;
+    z-index: 5;
+    bottom: 5vw;
+    right: 5vw;
+    font-size: 4rem;
+}
+
+#top-anchor {
+    position: absolute;
+    top: 0;
+}

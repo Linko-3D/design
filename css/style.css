@@ -97,7 +97,8 @@ select {
 }
 
 .container {
-    margin: var(--padding) 0;
+    margin-top: var(--padding);
+    margin-bottom: calc( var(--padding) + var(--selector) );
     display: flex;
     flex-wrap: wrap;
 }

@@ -192,7 +192,7 @@ a {
     padding: 2.5vw;
 }
 
-.arrow-top {
+#arrow-top {
     position: fixed;
     z-index: 5;
     bottom: 6vw;
@@ -241,10 +241,10 @@ a {
         </div>
     </header>
 
-    <!-- Pop-ups -->
-    <a href="#top-anchor" class="arrow-top">
+    <a href="#top-anchor" id="arrow-top">
         <ion-icon name="arrow-up-circle"></ion-icon>
     </a>
+    
     
     
     <div class="container">
@@ -348,6 +348,23 @@ a {
             <div class="selector"></div>
             </a>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const arrowTop = document.getElementById("arrow-top");
+      
+          window.addEventListener("scroll", function () {
+            // Check the scroll position
+            if (window.scrollY > 100) {
+              // If the user has scrolled down, show the arrow
+              arrowTop.style.display = "block";
+            } else {
+              // If the user is at the top of the page, hide the arrow
+              arrowTop.style.display = "none";
+            }
+          });
+        });
+      </script>
+      
     <script src="app.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

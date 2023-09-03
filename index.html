@@ -45,6 +45,7 @@ header, footer {
     width: 100%;
     background-color: rgba(54, 61, 74, 0.9);
     backdrop-filter: blur(5px);
+    justify-content: space-between;
 }
 
 header {
@@ -199,6 +200,7 @@ a {
     right: 4vw;
     font-size: 3.5rem;
     color: rgba(255, 255, 255, 0.75);
+    display: none;
 }
 
 #top-anchor {
@@ -354,7 +356,7 @@ a {
       
           window.addEventListener("scroll", function () {
             // Check the scroll position
-            if (window.scrollY > 100) {
+            if (window.scrollY > 0) {
               // If the user has scrolled down, show the arrow
               arrowTop.style.display = "block";
             } else {
@@ -363,7 +365,7 @@ a {
             }
           });
         });
-      </script>
+      </script>      
       
     <script src="app.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

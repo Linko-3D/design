@@ -172,6 +172,10 @@ a {
     font-weight: 900;
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
+
 .img-container {
     width: 100%;
     height: 119.7vw;

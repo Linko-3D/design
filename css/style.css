@@ -66,8 +66,8 @@ footer {
     font-size: 9vw;
     color: rgba(255, 255, 255, 0.75);
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 1vh;
+    right: 1vh;
     z-index: 1;
 }
 
@@ -114,8 +114,8 @@ img {
 
 .card-text {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
+    bottom: 1vh;
+    left: 1vh;
     z-index: 1;
 }
 
@@ -182,8 +182,8 @@ a {
 #arrow-top {
     position: fixed;
     z-index: 3;
-    bottom: 9vw;
-    right: 3vw;
+    bottom: 5vh;
+    right: 2vh;
     font-size: 3.5rem;
     color: rgba(255, 255, 255, 0.75);
     display: none;

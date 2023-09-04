@@ -28,11 +28,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Check if the icon has the 'active' class and update the 'name' attribute accordingly
       if (menuIcon.classList.contains('active')) {
-          menuIcon.setAttribute('name', 'close');
+          menuIcon.setAttribute('name', 'close-outline');
           // Disable scrolling when the menu is active
           document.body.style.overflow = 'hidden';
       } else {
-          menuIcon.setAttribute('name', 'menu');
+          menuIcon.setAttribute('name', 'menu-outline');
           // Enable scrolling when the menu is not active
           document.body.style.overflow = 'auto';
       }

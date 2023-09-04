@@ -1,14 +1,39 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const burger = document.getElementById("burger");
-    const menuBurger = document.getElementById("menu-burger");
-    const icon = burger.querySelector(".icon"); // Select the ion-icon element inside the burger div
+document.addEventListener("DOMContentLoaded", function () {
+    const arrowTop = document.getElementById("arrow-top");
 
-    burger.addEventListener("click", () => {
-        menuBurger.classList.toggle("active");
-        if (menuBurger.classList.contains("active")) {
-            icon.setAttribute("name", "close-outline"); // Change the icon when menu is active
-        } else {
-            icon.setAttribute("name", "menu-outline"); // Change back the icon when menu is not active
-        }
+    window.addEventListener("scroll", function () {
+      // Check the scroll position
+      if (window.scrollY > 0) {
+        // If the user has scrolled down, show the arrow
+        arrowTop.style.display = "block";
+      } else {
+        // If the user is at the top of the page, hide the arrow
+        arrowTop.style.display = "none";
+      }
     });
-});
+  });
+
+
+  // Get references to the icon and menu elements
+  const menuIcon = document.getElementById('menu-icon');
+  const menu = document.getElementById('menu');
+
+  // Add a click event listener to the icon
+  menuIcon.addEventListener('click', function() {
+      // Toggle the 'active' class on the icon
+      menuIcon.classList.toggle('active');
+
+      // Toggle the 'active' class on the menu
+      menu.classList.toggle('active');
+
+      // Check if the icon has the 'active' class and update the 'name' attribute accordingly
+      if (menuIcon.classList.contains('active')) {
+          menuIcon.setAttribute('name', 'close');
+          // Disable scrolling when the menu is active
+          document.body.style.overflow = 'hidden';
+      } else {
+          menuIcon.setAttribute('name', 'menu');
+          // Enable scrolling when the menu is not active
+          document.body.style.overflow = 'auto';
+      }
+  });

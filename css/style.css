@@ -19,7 +19,7 @@ html {
     --selector: 0.5vh;
     --font-size: calc(0.7rem + 1vw);
     --background-color: rgb(37, 43, 52);
-    --panel-color: rgba(54, 61, 74, 0.99);
+    --panel-color: rgba(54, 61, 74, 0.95);
 }
 
 body {
@@ -230,9 +230,23 @@ a {
     width: 100vw;
     top: 10vh;
     left: 0;
+    padding: 5vw;
+    align-items: center;
+    justify-content: center;
     display: none;
 }
 
 .ad-details .active {
     display: flex;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.galery {
+    width: 50%;
+    height: 50%;
 }

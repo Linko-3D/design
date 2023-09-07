@@ -53,10 +53,10 @@ toggleIcon.addEventListener("click", function () {
   // Toggle the "hide" class on the options element
   toggleOptions.classList.toggle("hide");
 
-  // Toggle the icon name between "chevron-up" and "chevron-down"
-  if (toggleIcon.getAttribute("name") === "chevron-up") {
+  // Toggle the icon name between "chevron-forward" and "chevron-down"
+  if (toggleIcon.getAttribute("name") === "chevron-forward") {
     toggleIcon.setAttribute("name", "chevron-down");
   } else {
-    toggleIcon.setAttribute("name", "chevron-up");
+    toggleIcon.setAttribute("name", "chevron-forward");
   }
 });

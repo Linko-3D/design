@@ -16,7 +16,7 @@ html {
 
 :root {
     --padding: 5vh;
-    --selector: 0.5vh;
+    --low-padding: 0.5vh;
     --font-size: calc(0.7rem + 1vw);
     --background-color: rgb(37, 43, 52);
     --panel-color: rgba(54, 61, 74, 0.9);
@@ -40,7 +40,7 @@ header, footer {
     background-color: var(--panel-color);
     backdrop-filter: blur(5px);
     justify-content: space-between;
-    gap: var(--selector);
+    gap: var(--low-padding);
 }
 
 header {
@@ -51,10 +51,11 @@ header {
 .options {
     display: flex;
     flex-direction: column;
-    gap: var(--selector);
+    gap: var(--low-padding);
 }
 
 .line {
+    padding: 0px var(--low-padding);
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -68,7 +69,7 @@ header {
 
 footer {
     bottom: 0;
-    height: calc(var(--padding) + var(--selector));
+    height: calc(var(--padding) + var(--low-padding));
 }
 
 .rect {
@@ -116,7 +117,7 @@ select, input {
 }
 
 .container {
-    margin: var(--padding) 5vw calc(var(--padding) + var(--selector)) 5vw;
+    margin: var(--padding) 5vw calc(var(--padding) + var(--low-padding)) 5vw;
     display: flex;
     flex-wrap: wrap;
 }
@@ -144,7 +145,7 @@ img {
 }
 
 .selector {
-    height: var(--selector);
+    height: var(--low-padding);
     width: 100%;
     background-color: black;
 }

@@ -12,6 +12,8 @@
 
 html {
     scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
 }
 
 :root {
@@ -25,6 +27,8 @@ html {
 body {
     background: linear-gradient(to bottom, rgba(141, 165, 243, 0.05), rgb(33, 38, 46), rgba(255, 127, 127, 0.05));
     background-color: var(--background-color);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     color: white;
     font: 500 var(--font-size) 'Roboto', sans-serif;
     text-shadow: -1px -1px 2px black, 1px -1px 2px black, -1px 1px 2px black, 1px 1px 2px black;

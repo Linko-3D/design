@@ -56,7 +56,7 @@ header {
 }
 
 .line {
-    padding: 0px var(--low-padding);
+    padding: 0 var(--low-padding);
     display: flex;
     width: 100%;
     height: var(--padding);
@@ -65,7 +65,6 @@ header {
 .end {
     justify-content: flex-end;
 }
-
 
 .hide {
     display: none;
@@ -108,20 +107,20 @@ footer {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.5) 100%), radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.25) 100%);
 }
 
-
 .small {
     width: 15vw;
 }
 
 select, input, option {
-    /* width: 100%; */
+    width: 100%; /* Uncomment this line if needed */
     height: 100%;
     font-weight: 600;
     outline: none;
     padding: 5px;
 }
 
-select, input[type="search"] {
+/* The following selector should be separated */
+input[type="search"] {
     width: 100%;
 }
 
@@ -133,11 +132,10 @@ select, input[type="search"] {
 
 .card {
     position: relative;
-    width: 45vw;
-    width: calc(  (100vw - (var(--container-margin) * 2 )) / 2);
-    height: calc((100vw - (var(--container-margin) * 2 )) / 2) * (4/3));
+    width: calc((100vw - (var(--container-margin) * 2)) / 2);
+    height: calc((100vw - (var(--container-margin) * 2)) / 2 * (4/3)); /* Corrected syntax error */
     /* padding: 1px; */
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 5);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5); /* Corrected alpha value */
     color: white;
     border: 3px solid rgba(0, 0, 0, 0);
 }
@@ -206,7 +204,6 @@ a {
     text-transform: uppercase;
 }
 
-
 .img-container {
     width: 100%;
     height: 119.7vw;
@@ -246,7 +243,7 @@ a {
     justify-content: center;
     align-items: center;
     gap: 3vh;
-    font-size: calc( var(--font-size) * 1.5 );
+    font-size: calc(var(--font-size) * 1.5);
 }
 
 .filter {
@@ -280,7 +277,7 @@ form {
     padding: var(--low-padding);
     align-items: center;
     justify-content: center;
-    background-color: var(--background-color);
+    /* background-color: var(--background-color);  <-- This line is redundant */
 }
 
 .ad-details .active {
@@ -305,7 +302,6 @@ form {
 .settings-container label {
     white-space: nowrap;
 }
-
 
 input[type="checkbox"] {
     appearance: none;

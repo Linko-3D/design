@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Origine</title>
+    <style>
+        #options {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <label for="showOptions">Origine</label>
+    <input type="checkbox" id="showOptions">
+    
+    <div id="options">
+        <input type="checkbox" name="category" value="Arabe" id="Arabe"><label for="Arabe">Arabe</label><br>
+        <input type="checkbox" name="category" value="Africaine" id="Africaine"><label for="Africaine">Africaine</label><br>
+        <input type="checkbox" name="category" value="Asiatique" id="Asiatique"><label for="Asiatique">Asiatique</label><br>
+        <input type="checkbox" name="category" value="Européenne" id="Européenne"><label for="Européenne">Européenne</label><br>
+        <input type="checkbox" name="category" value="Hispanique" id="Hispanique"><label for="Hispanique">Hispanique</label><br>
+        <input type="checkbox" name="category" value="Indienne" id="Indienne"><label for="Indienne">Indienne</label><br>
+        <input type="checkbox" name="category" value="Autres" id="Autres"><label for="Autres">Autres</label><br>
+    </div>
+
+    <script>
+        const checkbox = document.getElementById("showOptions");
+        const options = document.getElementById("options");
+
+        checkbox.addEventListener("change", function () {
+            if (checkbox.checked) {
+                options.style.display = "block";
+            } else {
+                options.style.display = "none";
+            }
+        });
+
+        // Initially, hide the options
+        options.style.display = "none";
+    </script>
+</body>
+</html>

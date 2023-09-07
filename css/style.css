@@ -19,9 +19,7 @@ html {
     --low-padding: 0.5vh;
     --font-size: calc(0.7rem + 1vw);
     --background-color: rgb(37, 43, 52);
-    /* --backgroud-color: rgb(255, 255, 255); */
     --panel-color: rgb(54, 61, 74);
-    /* --panel-color: rgb(229, 229, 229); */
     --container-margin: 5vw;
     --color: white;
 }

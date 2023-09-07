@@ -322,5 +322,6 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked {
+    background-color: rgb(142, 239, 151);
     background-color: rgb(112, 186, 250);
 }

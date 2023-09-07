@@ -108,11 +108,12 @@ footer {
     width: 15vw;
 }
 
-option, select, input {
+select, input {
     width: 100%;
     height: 100%;
     font-weight: 600;
     outline: none;
+    padding: 5px;
 }
 
 .container {

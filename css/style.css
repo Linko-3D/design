@@ -23,7 +23,7 @@ html {
 }
 
 body {
-    background: linear-gradient(to bottom, rgba(141, 165, 243, 0.1), rgb(33, 38, 46), rgba(255, 127, 127, 0.1));
+    background: linear-gradient(to bottom, rgba(141, 165, 243, 0.05), rgb(33, 38, 46), rgba(255, 127, 127, 0.05));
     background-color: var(--background-color);
     color: white;
     font: 500 var(--font-size) 'Roboto', sans-serif;

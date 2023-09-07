@@ -40,3 +40,23 @@ document.addEventListener("DOMContentLoaded", function () {
           document.body.style.overflow = 'auto';
       }
   });
+
+
+  // Toggle options ##########################################################
+
+  // Get references to the icon and options elements
+const toggleIcon = document.getElementById("toggle-options-icon");
+const toggleOptions = document.getElementById("toggle-options");
+
+// Add a click event listener to the icon
+toggleIcon.addEventListener("click", function () {
+  // Toggle the "hide" class on the options element
+  toggleOptions.classList.toggle("hide");
+
+  // Toggle the icon name between "chevron-up" and "chevron-down"
+  if (toggleIcon.getAttribute("name") === "chevron-up") {
+    toggleIcon.setAttribute("name", "chevron-down");
+  } else {
+    toggleIcon.setAttribute("name", "chevron-up");
+  }
+});

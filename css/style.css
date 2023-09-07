@@ -48,12 +48,23 @@ header {
     flex-direction: column;
 }
 
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: var(--selector);
+}
+
 .line {
     display: flex;
     align-items: center;
     width: 100%;
     justify-content: space-between;
     height: var(--padding);
+}
+
+
+.hide {
+    display: none;
 }
 
 footer {

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort by Date or Price</title>
+    <style>
+        /* Add some basic styling for the list */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 5px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sort by Date or Price</h1>
+    <label for="sortSelect">Sort by:</label>
+    <select id="sortSelect">
+        <option value="date">Date</option>
+        <option value="price">Price</option>
+    </select>
+
+    <ul id="itemList">
+        <!-- Populate this list with your items -->
+        <li data-date="2023-09-07" data-price="50">Item A - Date: 2023-09-07, Price: $50</li>
+        <li data-date="2023-09-05" data-price="30">Item B - Date: 2023-09-05, Price: $30</li>
+        <li data-date="2023-09-10" data-price="70">Item C - Date: 2023-09-10, Price: $70</li>
+        <li data-date="2023-09-02" data-price="25">Item D - Date: 2023-09-02, Price: $25</li>
+    </ul>
+
+    <script>
+        const sortSelect = document.getElementById('sortSelect');
+        const itemList = document.getElementById('itemList');
+        const items = Array.from(itemList.children);
+
+        sortSelect.addEventListener('change', () => {
+            const sortBy = sortSelect.value;
+
+            items.sort((a, b) => {
+                const aValue = parseFloat(a.getAttribute(`data-${sortBy}`));
+                const bValue = parseFloat(b.getAttribute(`data-${sortBy}`));
+
+                if (sortBy === 'date') {
+                    return new Date(aValue) - new Date(bValue);
+                } else {
+                    return aValue - bValue;
+                }
+            });
+
+            // Clear the current list
+            while (itemList.firstChild) {
+                itemList.removeChild(itemList.firstChild);
+            }
+
+            // Append sorted items
+            items.forEach(item => {
+                itemList.appendChild(item);
+            });
+        });
+    </script>
+</body>
+</html>

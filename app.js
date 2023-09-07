@@ -1,3 +1,5 @@
+// Arrow ###################################################################################################
+
 document.addEventListener("DOMContentLoaded", function () {
     const arrowTop = document.getElementById("arrow-top");
 
@@ -13,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  // Burger-menu ############################################################################################
 
   // Get references to the icon and menu elements
   const menuIcon = document.getElementById('menu-icon');

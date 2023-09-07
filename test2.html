@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Category Selection</title>
+    <style>
+        .scrollable-container {
+            width: 100%;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        label {
+            display: inline-block;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        input[type="checkbox"]:checked + label {
+            background-color: #007BFF;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h2>Select categories:</h2>
+
+    <div class="scrollable-container">
+        <form>
+            <input type="checkbox" name="category" value="All" id="all">
+            <label for="all">Toute origine</label>
+
+            <input type="checkbox" name="category" value="Arab" id="arab">
+            <label for="arab">Arabe</label>
+
+            <input type="checkbox" name="category" value="Asian" id="asian">
+            <label for="asian">Asiatique</label>
+
+            <input type="checkbox" name="category" value="Caucasian" id="caucasian">
+            <label for="caucasian">Caucasienne</label>
+
+            <input type="checkbox" name="category" value="Latino" id="latino">
+            <label for="latino">Latine</label>
+
+            <input type="checkbox" name="category" value="Mixed" id="mixed">
+            <label for="mixed">Metisse</label>
+        </form>
+    </div>
+
+    <script>
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        const allCheckbox = document.getElementById('all');
+
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', () => {
+                if (checkbox === allCheckbox && checkbox.checked) {
+                    checkboxes.forEach(cb => {
+                        if (cb !== allCheckbox) {
+                            cb.checked = false;
+                            cb.nextElementSibling.style.backgroundColor = '';
+                            cb.nextElementSibling.style.color = '';
+                        }
+                    });
+                } else if (checkbox !== allCheckbox && allCheckbox.checked) {
+                    allCheckbox.checked = false;
+                    allCheckbox.nextElementSibling.style.backgroundColor = '';
+                    allCheckbox.nextElementSibling.style.color = '';
+                }
+
+                checkboxes.forEach(cb => {
+                    if (cb.checked) {
+                        cb.nextElementSibling.style.backgroundColor = '#007BFF';
+                        cb.nextElementSibling.style.color = '#fff';
+                    } else {
+                        cb.nextElementSibling.style.backgroundColor = '';
+                        cb.nextElementSibling.style.color = '';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

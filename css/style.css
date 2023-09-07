@@ -192,8 +192,8 @@ a {
     bottom: 5vh;
     right: 2vh;
     font-size: 3rem;
-    color: rgba(255, 255, 255, 0.75);
     display: none;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 #top-anchor {

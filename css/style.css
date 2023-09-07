@@ -40,12 +40,12 @@ header, footer {
     background-color: var(--panel-color);
     backdrop-filter: blur(5px);
     justify-content: space-between;
+    gap: var(--selector);
 }
 
 header {
     top: 0;
     flex-direction: column;
-    gap: var(--selector);
 }
 
 .line {

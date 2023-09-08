@@ -292,11 +292,6 @@ form {
     display: flex;
 }
 
-.galery {
-    width: 50%;
-    height: 50%;
-}
-
 .settings-container {
     display: flex;
     align-items: center;

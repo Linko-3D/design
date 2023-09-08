@@ -44,19 +44,24 @@
         </select>
 
         <select name="category">
-            <option value="All">Toute origine</option>
-            <option value="Arabe">Arabe</option>
-            <option value="Africaine">Africaine</option>
-            <option value="Asiatique">Asiatique</option>
-            <option value="Européenne">Européenne</option>
-            <option value="Hispanique">Hispanique</option>
-            <option value="Indienne">Indienne</option>
-            <option value="Autres">Autres</option>
+            <option value="all">Toute origine</option>
+            <option value="arabe">Arabe</option>
+            <option value="africaine">Africaine</option>
+            <option value="asiatique">Asiatique</option>
+            <option value="européenne">Européenne</option>
+            <option value="hispanique">Hispanique</option>
+            <option value="indienne">Indienne</option>
+            <option value="autres">Autres</option>
         </select>
         
 
             <div>
-                <ion-icon id="toggle-theme" class="icon small" name="moon"></ion-icon>
+                <!-- <ion-icon id="toggle-theme" class="icon small" name="moon"></ion-icon> -->
+                <select class="small" name="language">
+                    <option value="french">FR</option>
+                    <option value="english">EN</option>
+                    <option value="spanish">ES</option>
+                </select>
             </div>
         </div>
     </div>
@@ -102,6 +107,10 @@
                 <input type="checkbox" id="outcall" name="outcall" value="checkboxValue">
                 <label for="outcall">Se déplace</label>
             </div>
+        </div>
+
+        <div class="line">
+            <ion-icon id="toggle-theme" class="icon small" name="moon"></ion-icon>
         </div>
 </div>
 

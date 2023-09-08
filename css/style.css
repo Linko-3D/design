@@ -102,6 +102,10 @@ footer {
     z-index: 1;
 }
 
+.inFavorite {
+    color: rgb(205, 56, 56);
+}
+
 .vignette {
     position: absolute;
     top: 0;

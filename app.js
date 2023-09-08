@@ -45,7 +45,7 @@ function setTheme(theme) {
 
   if (theme === 'dark') {
       root.style.setProperty('--background-color', 'rgb(37, 43, 52)');
-      root.style.setProperty('--panel-color', 'rgb(54, 61, 74)');
+      root.style.setProperty('--panel-color', 'rgba(54, 61, 74, 0.9)');
       root.style.setProperty('--color', 'white');
       root.style.setProperty('--red', 'rgb(252, 127, 127)');
       root.style.setProperty('--green', 'rgb(142, 239, 151)');
@@ -55,7 +55,7 @@ function setTheme(theme) {
       moonIcon.classList.remove('moon-outline');
   } else {
       root.style.setProperty('--background-color', 'rgb(255, 255, 255)');
-      root.style.setProperty('--panel-color', 'rgb(229, 229, 229)');
+      root.style.setProperty('--panel-color', 'rgba(229, 229, 229, 0.9)');
       root.style.setProperty('--color', 'black');
       root.style.setProperty('--red', 'rgb(205, 56, 56)');
       root.style.setProperty('--green', 'rgb(47, 161, 57)');

@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     window.addEventListener("scroll", function () {
       // Check the scroll position
-      if (window.scrollY > 0) {
+      if (window.scrollY > 100) {
         // If the user has scrolled down, show the arrow
         arrowTop.style.display = "block";
       } else {

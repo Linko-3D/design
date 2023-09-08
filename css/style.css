@@ -31,7 +31,6 @@ body {
     background-repeat: no-repeat;
     color: var(--color);
     font: 500 var(--font-size) 'Roboto', sans-serif;
-    text-shadow: -1px -1px 2px black, 1px -1px 2px black, -1px 1px 2px black, 1px 1px 2px black;
 }
 
 header, footer {
@@ -137,8 +136,10 @@ input[type="search"] {
     height: calc((100vw - (var(--container-margin) * 2)) / 2 * (4/3)); /* Corrected syntax error */
     /* padding: 1px; */
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5); /* Corrected alpha value */
-    color: var(--color);
+    color: white;
     border: 3px solid rgba(0, 0, 0, 0);
+    text-shadow: -1px -1px 2px black, 1px -1px 2px black, -1px 1px 2px black, 1px 1px 2px black;
+
 }
 
 .online {
@@ -314,7 +315,8 @@ input[type="checkbox"] {
     background-color: var(--color);
 }
 
+/* Make sure this rule is placed after the initial styling */
 input[type="checkbox"]:checked {
-    background-color: rgb(142, 239, 151);
-    background-color: rgb(112, 186, 250);
+    background-color: rgb(112, 186, 250); /* Change the background color when checked */
+    color: rgb(112, 186, 250); /* Change the text color when checked */
 }

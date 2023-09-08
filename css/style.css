@@ -22,10 +22,14 @@ html {
     --panel-color: rgb(54, 61, 74);
     --container-margin: 5vw;
     --color: white;
+    --red: rgb(252, 127, 127);
+    --green: rgb(142, 239, 151);
+    --blue: rgb(141, 165, 243);
+    --violet: rgb(195, 142, 241);
+    --yellow: rgb(255, 222, 102);
 }
 
 body {
-    /* background: linear-gradient(to bottom, rgba(141, 165, 243, 0.05), rgb(33, 38, 46), rgba(255, 127, 127, 0.05)); */
     background-color: var(--background-color);
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -133,11 +137,9 @@ input[type="search"] {
 .card {
     position: relative;
     width: calc((100vw - (var(--container-margin) * 2)) / 2);
-    height: calc((100vw - (var(--container-margin) * 2)) / 2 * (4/3)); /* Corrected syntax error */
-    /* padding: 1px; */
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5); /* Corrected alpha value */
+    height: calc((100vw - (var(--container-margin) * 2)) / 2 * (4/3));
     color: white;
-    border: 3px solid rgba(0, 0, 0, 0);
+    border: 2px solid rgba(0, 0, 0, 0);
     text-shadow: -1px -1px 2px black, 1px -1px 2px black, -1px 1px 2px black, 1px 1px 2px black;
 
 }
@@ -171,32 +173,30 @@ a {
 }
 
 .red {
-    color: rgb(252, 127, 127);
+    color: var(--red);
 }
 
 .green {
-    color: rgb(142, 239, 151);
+    color: var(--green);
 }
 
 .blue {
-    color: rgb(141, 165, 243);
+    color: var(--blue);
 }
 
 .violet {
-    color: rgb(195, 142, 241);
+    color: var(--violet);
 }
 
 .yellow {
-    color: rgb(255, 222, 102);
+    color: var(--yellow);
 }
 
 .bg-blue {
-    background-color: rgb(141, 165, 243);
+    background-color: var(--blue);
 }
 
-.active-bg-blue {
-    background-color: rgba(58, 82, 106, 0.5);
-}
+
 
 .bold {
     font-weight: 900;

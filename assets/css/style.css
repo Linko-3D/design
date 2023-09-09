@@ -19,7 +19,7 @@ html {
     --low-padding: 0.5vh;
     --font-size: calc(0.7rem + 1vw);
     --background-color: rgb(37, 43, 52);
-    --panel-color: rgba(54, 61, 74, 0.9);
+    --panel-color: rgba(54, 61, 74, 0.99);
     --container-margin: 5vw;
     --color: white;
     --red: rgb(252, 127, 127);
@@ -277,11 +277,6 @@ form {
     justify-content: center;
 }
 
-.ad-details img {
-
-    height: 10vh;
-}
-
 .settings-container {
     display: flex;
     align-items: center;
@@ -321,7 +316,8 @@ input[type="checkbox"]:checked {
     scroll-behavior: smooth;
     white-space: nowrap;
     width: 100%; /* Set the width to 100% */
-    height: calc(50vh - var(--padding));
+    /* height: calc(50vh - var(--padding)); */
+    height: calc(100vw * (4/3));
 }
 
 .image-gallery img {

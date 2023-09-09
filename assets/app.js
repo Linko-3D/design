@@ -107,3 +107,11 @@ closeIcon.addEventListener("click", function() {
   // Add the "hide" class to the ad-details div
   adDetailsDiv.classList.add("hide");
 });
+
+
+
+
+
+
+
+

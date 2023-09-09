@@ -93,3 +93,17 @@ if (savedTheme) {
 }
 
 
+// Close ad #################################################
+
+
+// Get a reference to the ion-icon element
+const closeIcon = document.getElementById("close-icon");
+
+// Get a reference to the ad-details div
+const adDetailsDiv = document.querySelector(".ad-details");
+
+// Add a click event listener to the close icon
+closeIcon.addEventListener("click", function() {
+  // Add the "hide" class to the ad-details div
+  adDetailsDiv.classList.add("hide");
+});

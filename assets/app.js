@@ -102,11 +102,22 @@ const closeIcon = document.getElementById("close-icon");
 // Get a reference to the ad-details div
 const adDetailsDiv = document.querySelector(".ad-details");
 
-// Add a click event listener to the close icon
-closeIcon.addEventListener("click", function() {
+// Function to close the ad
+function closeAd() {
   // Add the "hide" class to the ad-details div
   adDetailsDiv.classList.add("hide");
+}
+
+// Add a click event listener to the close icon
+closeIcon.addEventListener("click", closeAd);
+
+// Add an event listener to the document to listen for the Escape key press
+document.addEventListener("keydown", function(event) {
+  if (event.key === "Escape") {
+    closeAd();
+  }
 });
+
 
 
 

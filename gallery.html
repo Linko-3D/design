@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .gallery-container {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .image-container {
+            display: flex;
+            flex-direction: row;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+        }
+
+        img {
+            flex: 0 0 100%;
+            scroll-snap-align: start;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+    <title>Horizontal Image Gallery</title>
+</head>
+<body>
+    <div class="gallery-container">
+        <div class="image-container">
+            <img src="assets/img/gallery1/1.jpg" alt="Image 1">
+            <img src="assets/img/gallery1/1.jpg" alt="Image 2">
+            <!-- Add more images as needed -->
+        </div>
+    </div>
+    <script>
+        const imageContainer = document.querySelector('.image-container');
+
+        function scrollImages() {
+            const scrollAmount = imageContainer.clientWidth;
+            imageContainer.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        }
+
+        // Automatically scroll to the next image every 3 seconds
+        setInterval(scrollImages, 3000);
+    </script>
+</body>
+</html>

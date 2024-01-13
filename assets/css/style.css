@@ -109,6 +109,15 @@ footer {
     color: rgb(205, 56, 56);
 }
 
+.message {
+    font-size: 9vw;
+    color: rgb(195, 142, 241, 0.7);
+    position: absolute;
+    top: 1vh;
+    right: 0vh;
+    z-index: 1;
+}
+
 .vignette {
     position: absolute;
     top: 0;
